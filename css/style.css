@@ -1,0 +1,674 @@
+body{
+    background-color:rgb(221, 221, 218);
+}
+
+/*Start NavBar */
+.navbar-dark .navbar-nav .nav-link
+{
+    margin-left: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+.navbar-brand
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+position: relative;
+}
+.navbar-dark .navbar-nav .active>.nav-link::after
+{
+content:"";
+position: absolute;
+top:37px;
+left:7px;
+width: 40px;
+height: 2px;
+background-color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #fff;
+  
+  
+}
+.navbar-dark .navbar-nav .nav-link::after
+{
+    content:"";
+    position: absolute;
+    top:38px;
+    left:7px;
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
+    transition: width .5s ;
+   
+}
+.navbar-dark .navbar-nav .nav-link:hover::after
+{
+      width: 40px;
+
+}
+/**navbar-light**/
+.navbar-light .navbar-nav .nav-link
+{
+    margin-left: 20px;
+    font-weight: 600;
+    color: #0078ff;
+}
+.navbar-brand
+{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.navbar-light .navbar-nav .nav-link
+{
+position: relative;
+}
+.navbar-light .navbar-nav .active>.nav-link::after
+{
+content:"";
+position: absolute;
+top:37px;
+left:7px;
+width: 40px;
+height: 2px;
+background-color: #0078ff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-brand
+{
+    color: #0078ff;
+  
+}
+
+.navbar-light .navbar-nav .nav-link::after
+{
+    content:"";
+    position: absolute;
+    top:38px;
+    left:7px;
+    width: 0px;
+    height: 2px;
+    background-color: #0078ff;
+    transition: width .5s ;
+   
+}
+.navbar-light .navbar-nav .nav-link:hover::after 
+{
+      width: 40px;
+
+}/**********media queries**************/
+@media screen  and (max-width:991px)  
+{
+        #navbarNav ul  {
+        text-align: left;
+        background-color: #fff;
+        }
+        .navbar-dark  .navbar-nav .nav-link::after,.navbar-dark .navbar-nav .active>.nav-link::after
+        {
+            background-color: #0078ff;
+        }
+        .navbar-dark .navbar-nav .nav-link
+        {
+        color:#0078ff
+        }
+        .navbar-dark .navbar-nav .active>.nav-link
+        {
+            color:#0078ff;
+        }
+        #navbarNav ul li a:hover
+        {
+            color:#0078ff;
+        }
+}
+/*End NavBar */
+
+/* start home section */
+
+
+ #header
+{
+    background-image: url(../images/[routeegypt.com][176]intro-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow:auto;
+    height: 100vh;
+    color:#fff;
+    text-align: center;
+   
+}
+#header .bg-black
+{
+    background-color: rgba(19, 19, 19, 0.452);
+    height: 100%;
+}
+
+#header .bg-black .header-caption
+{
+    height: 100%;
+}
+
+
+.header-caption h1
+{
+    font-size: 4rem;
+    
+}
+.header-caption span
+{
+    
+    font-size: 2.5rem;
+   
+}
+
+.l1 h1::after
+{
+    content:"|";
+    animation-name:animation-text ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin-left: 1rem;
+}
+
+@keyframes animation-text
+{
+0%
+{
+    content: "|";
+}
+5%
+{
+    content:"d";
+}
+10%
+{
+    content:"de";
+}
+15%
+{
+    content:"dev";
+}
+20%
+{
+    content:"deve";
+}
+25%
+{
+    content:"devel";
+}
+30%
+{
+    content:"develo";
+}
+35%
+{
+    content:"develop";
+}
+40%
+{
+    content:"develope";
+}
+45%
+{
+    content:"developer";
+}
+50%
+{
+    content:"develope";
+}
+55%
+{
+    content:"develop";
+}
+60%
+{
+    content:"develo";
+}
+65%
+{
+    content:"devel";
+}
+
+70%
+{
+    content:"deve";
+}
+
+75%
+{
+    content:"dev";
+}
+
+80%
+{
+    content:"de";
+}
+
+85%
+{
+    content:"d";
+}
+90%
+{
+    content: "|";
+}
+}
+
+
+@media screen and  (max-width: 769px)
+{
+    .header-caption h1
+    {
+        font-size: 2rem;
+    }
+    .header-caption span
+{
+    
+    font-size: 1rem;
+   
+}
+   
+}
+/* end home section */
+
+/* start about section */
+
+.box-shadow
+{
+    background-color:rgb(253, 253, 250);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.title-s
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+.skill-mf
+{
+    margin-top: 1rem;
+}
+.lead
+{
+    margin-top: 1rem;
+}
+.progress
+{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+/* end about section */
+
+/* start Services section */
+
+.line
+{
+    width: 40px;
+    height:5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+.services-title
+{
+   font-family: 'Anton', sans-serif;
+   font-family: 'Archivo Black', sans-serif;
+   font-size: 40px;
+}
+.services-box {
+    background-color: #fff;
+    padding: 2.5rem 1.3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.services-box .fas
+{
+    font-size: 3rem;
+    margin-top: 1.5rem;
+}
+.fal
+{
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+.services-box .fas:hover
+{
+    color: white;
+}
+
+.circle
+{
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #0078ff;
+}
+.circle:hover{
+    box-shadow: 0 0 0 10px #69afffb9;
+    background-color: #0078ff;
+}
+
+.services-content
+{
+    margin-top: 2rem;
+}
+.paragraph-title
+{
+    font-size: 1.5rem;
+}
+
+/* end Services section */
+
+/* start counter section */
+#experience
+{
+    background-image: url(../images/[routeegypt.com][711]counters-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+    position: relative;
+    
+}
+
+.experience-layer
+{
+    background-color: rgba(0, 120, 255,0.7);
+    height: 100%;
+}
+
+#experience .row
+{
+    padding: 3rem 0;
+}
+
+.icon-fixed
+{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow:  0 0 0 10px rgba(255, 255, 255,.8 );
+}
+.icon-fixed i
+{
+    font-size:30px ;
+}
+#experience .item p
+{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+
+
+/* end counter section */
+
+/*start protofolio section */
+
+.color-title
+{
+    color: #0078ff;
+    font-size: 13px;
+}
+.color-date
+{
+    font-size: 13px;
+    color: #4e4e4e;
+}
+.content
+{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+.content .fas
+{
+    font-size: 2rem;
+    color: #0078ff;
+    margin-top: .5rem;
+    /*margin-left: 2rem;*/
+}
+.protofolio-box
+{ background-color: #fff;
+    margin-bottom: 3rem;
+    overflow: hidden;
+ 
+   
+}
+.img-scale
+{
+    overflow: hidden;
+  
+}
+.protofolio-box img
+{
+    transition: transform 2s;
+}
+.protofolio-box img:hover{
+    transform: scale(1.5,1.5);
+}
+/*end*/
+
+/*start slider*/
+#slider
+{
+    background-image: url(../images/[routeegypt.com][71]overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size:100% 100%;
+    height: 400px;
+}
+.overlayslider-color
+{
+    background-color: #0077ff79;
+    height: 100%;
+    width: 100%;
+}
+
+#carouselExampleIndicators
+{
+    margin-top: 8rem;
+}
+.carousel-inner
+{
+    color: white;
+    
+}
+.contenrt
+{
+    width: 60%;
+    margin: 0 auto;
+}
+.re-img 
+{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.carousel-item
+{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.re-img  img
+{
+    border-radius: 50%;
+}
+/*end slider*/
+
+/*start blog*/
+.avatar
+{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.blog .item a
+{
+    text-decoration: none;
+    color:#1e1e1e;
+    transition: color .5s;
+}
+.blog .item a:hover
+{
+    color: #0078ff; 
+}
+
+.clock-icon
+{
+width:16px;
+height:16px;
+margin-right: 4px;
+border-radius: 50%;
+border:1px solid rgba(0,0,0,.5);
+position: relative;
+}
+.clock-icon::after
+{
+content: "";
+position: absolute;
+top:2px;
+bottom:5.5px;
+left:6.5px;
+right:6.5px;
+background-color:rgba(0,0,0,.5);
+}
+.clock-icon::before
+{
+content: "";
+position: absolute;
+left:2px;
+right:6px;
+top:7px;
+bottom:6.5px;
+background-color:rgba(0,0,0,.5);
+}
+
+.blog .item .card .card-body
+{
+    position:relative
+}
+.box-center 
+{
+position: absolute;
+top:-10px;
+left :40%;
+background-color: #0078ff; 
+color:#fff;
+font-size: .7rem;
+font-weight: 500;
+padding:5px 8px;
+}
+
+/*end blog*/
+
+/*start contact*/
+#contact
+{
+    background-image: url(../images/[routeegypt.com][71]overlay-bg.jpg);
+    background-size: cover;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.overlay{
+    background-color: #0078ff;
+    opacity: .7;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+
+.line2
+{
+    height: 4px;
+    width: 100px;
+    background-color: #0078ff;
+}
+.socials li
+{
+    display: inline-block;
+}
+.ico-circle i
+{
+    margin: 6px;
+}
+.ico-circle
+{
+    height: 70px;
+    width: 70px;
+   font-size: 25px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 4px #0078ff;
+    margin: 10px;
+    color: black;
+}
+.ico-circle:hover
+{
+    color: white;
+    box-shadow: 0 0 0 4px #a4c6ec;
+    background-color: #0078ff;
+}
+.title
+{
+    margin-bottom: 2rem;
+}
+.button-primary
+{
+width: 200px;
+height: 60px;
+border-radius: 4rem;
+font-size: 20px;
+margin-top: 2rem;
+}
+.form-group
+{
+    margin-bottom: 2rem;
+}
+.list-ico li
+{
+    list-style: none;
+}
+.list-ico i
+{
+   color: #0078ff;
+   margin: 5px;
+}
+.list-ico
+{
+    margin-bottom:4rem;
+    padding-left: 0px;
+}
+.footer-content
+{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-top: 3rem;
+}
+.footer-content a
+{
+    text-decoration: none;
+    color: white;
+}
+/* end contact */
